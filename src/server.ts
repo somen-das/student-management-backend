@@ -21,8 +21,8 @@ mongoose.connect(process.env.MONGODB_URL!)
 .then(()=>{
     console.log(`Data base connected successfully url : http://localhost:${PORT}`)
 })
-.catch(()=>{
-    console.log(`Database is not connnected ok!!`)
+.catch((err)=>{
+    console.log(`Database is not connnected ok!!`, err)
 })
 
 app.listen(PORT, ()=>{
