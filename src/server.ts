@@ -2,7 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import APPSide from './app';
-
+import cors from 'cors'
 const app = express();
 
 dotenv.config();
@@ -10,6 +10,7 @@ dotenv.config();
 const PORT = process.env.PORT;
 
 app.use(APPSide);
+app.use(cors())
 
 // not found page if route is not correct
 app.use((req, res)=>{
