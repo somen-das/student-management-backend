@@ -1,0 +1,36 @@
+{
+  "name": "student-management-backend",
+  "version": "1.0.0",
+  "description": "This is a student management system, role based login and teacture can manage there students details like payments and tution batch time",
+  "homepage": "https://github.com/somen-das/student-management-backend#readme",
+  "bugs": {
+    "url": "https://github.com/somen-das/student-management-backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somen-das/student-management-backend.git"
+  },
+  "license": "ISC",
+  "author": "somen-das (software engineer)",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -L src/server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.5.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.6.0",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
